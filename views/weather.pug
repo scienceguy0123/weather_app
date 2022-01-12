@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1= title
+    p The weather in  #{city} is #{weather}
+    p The temperature is #{temp}#{unit}
+    p This is the weather report at #{date}   #{time}
+    a(class='button', href='/sendWeatherAPI') Get Weather
